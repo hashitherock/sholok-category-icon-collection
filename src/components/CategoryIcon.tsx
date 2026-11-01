@@ -5,6 +5,7 @@ export function CategoryIcon({ category, className }: { category: Category; clas
     <svg
       viewBox="0 0 64 64"
       fill="none"
+      color={BRAND_COLOR}
       stroke={BRAND_COLOR}
       strokeWidth={2.25}
       strokeLinecap="round"
