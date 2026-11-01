@@ -22,7 +22,7 @@ export const categories: Category[] = [
     name: "Men's Clothing",
     slug: "mens-clothing",
     concept: "Classic men's shirt",
-    body: `<title>Men's Clothing</title><path d="M27 8h10l1 4-6 4-6-4z"></path><path d="M26 11l-9 4-7 28 6 2 5-20 1 25c6 2 16 2 22 0l1-25 5 20 6-2-7-28-9-4"></path><path fill="var(--icon-accent, none)" d="M30 16h4v12h-4z"></path><path d="M10 41l6 2M48 43l6-2"></path><circle cx="32" cy="19" r=".6" fill="${BRAND_COLOR}"></circle><circle cx="32" cy="22.5" r=".6" fill="${BRAND_COLOR}"></circle><circle cx="32" cy="26" r=".6" fill="${BRAND_COLOR}"></circle>`,
+    body: `<title>Men's Clothing</title><path d="M27 8h10l1 4-6 4-6-4z"></path><path d="M26 11l-9 4-7 28 6 2 5-20 1 25c6 2 16 2 22 0l1-25 5 20 6-2-7-28-9-4"></path><path fill="var(--icon-accent, none)" d="M30 16h4v12h-4z"></path><path d="M10 41l6 2M48 43l6-2"></path><circle cx="32" cy="19" r=".6" fill="currentColor"></circle><circle cx="32" cy="22.5" r=".6" fill="currentColor"></circle><circle cx="32" cy="26" r=".6" fill="currentColor"></circle>`,
   },
   {
     id: 3,
@@ -57,7 +57,7 @@ export const categories: Category[] = [
     name: "Baby Care",
     slug: "baby-care",
     concept: "Baby feeding bottle",
-    body: `<title>Baby Care</title><circle cx="32" cy="36" r="18" fill="var(--icon-accent, none)"></circle><path d="M14.5 31.5a4.5 4.5 0 0 0 0 9M49.5 31.5a4.5 4.5 0 0 1 0 9"></path><path d="M33 18c-3-1-3-5 0-6 3 0 4 3 2 5"></path><path d="M23 30c1.2-1.6 3.4-1.6 4.6 0M36.4 30c1.2-1.6 3.4-1.6 4.6 0"></path><circle cx="25.5" cy="36" r="1.6" fill="${BRAND_COLOR}" stroke="none"></circle><circle cx="38.5" cy="36" r="1.6" fill="${BRAND_COLOR}" stroke="none"></circle><path d="M28.5 43c2 2 5 2 7 0"></path>`,
+    body: `<title>Baby Care</title><circle cx="32" cy="36" r="18" fill="var(--icon-accent, none)"></circle><path d="M14.5 31.5a4.5 4.5 0 0 0 0 9M49.5 31.5a4.5 4.5 0 0 1 0 9"></path><path d="M33 18c-3-1-3-5 0-6 3 0 4 3 2 5"></path><path d="M23 30c1.2-1.6 3.4-1.6 4.6 0M36.4 30c1.2-1.6 3.4-1.6 4.6 0"></path><circle cx="25.5" cy="36" r="1.6" fill="currentColor" stroke="none"></circle><circle cx="38.5" cy="36" r="1.6" fill="currentColor" stroke="none"></circle><path d="M28.5 43c2 2 5 2 7 0"></path>`,
   },
   {
     id: 8,
@@ -104,5 +104,5 @@ export const categories: Category[] = [
 ];
 
 export function buildSvg(c: Category, size = 64): string {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 64 64" fill="none" stroke="${BRAND_COLOR}" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">${c.body}</svg>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 64 64" color="${BRAND_COLOR}" fill="none" stroke="${BRAND_COLOR}" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">${c.body}</svg>`;
 }
