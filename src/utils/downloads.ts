@@ -49,7 +49,7 @@ const crcTable = (() => {
 })();
 function crc32(d: Uint8Array) {
   let c = 0xffffffff;
-  for (const b of d) c = crcTable[(c ^ b) & 0xff] ^ (c >>> 8);
+  for (const b of d) c = crcTable[(c ^ b) & 0xff]! ^ (c >>> 8);
   return (c ^ 0xffffffff) >>> 0;
 }
 
