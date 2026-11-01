@@ -6,7 +6,7 @@ export function CategoryIcon({ category, className }: { category: Category; clas
       viewBox="0 0 64 64"
       fill="none"
       stroke={BRAND_COLOR}
-      strokeWidth={2.5}
+      strokeWidth={2.25}
       strokeLinecap="round"
       strokeLinejoin="round"
       className={className}
