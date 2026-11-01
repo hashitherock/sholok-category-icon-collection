@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { Check, Download, Search, X, Package } from "lucide-react";
+import { Check, Download, Search, X } from "lucide-react";
 import { categories, type Category } from "@/data/categories";
 import { downloadAll, downloadPng, downloadSvg } from "@/utils/downloads";
 import { CategoryIcon } from "./CategoryIcon";
@@ -152,4 +152,4 @@ export function Studio() {
   );
 }
 
-export { Package };
+
